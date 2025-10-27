@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="page">
+      <div class="container">
+        <header class="hero card">
+          <h1>Student Profile CRUD Application</h1>
+          <p class="lead">
+            Manage student records with Create, Read, Update, and Delete
+            operations
+          </p>
+        </header>
+
+        <section class="card form-card">
+          <h2 class="section-title">Add New Student</h2>
+          <form
+            class="student-form"
+            action="#"
+            method="post"
+            onsubmit="return false;">
+            <div class="field">
+              <label for="name">Student Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Enter student name" />
+            </div>
+
+            <div class="field">
+              <label for="age">Age</label>
+              <input
+                id="age"
+                name="age"
+                type="number"
+                placeholder="Enter age" />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Enter email address" />
+            </div>
+
+            <div class="field">
+              <label for="course">Course</label>
+              <input
+                id="course"
+                name="course"
+                type="text"
+                placeholder="Enter course" />
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary">Add Student</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="card records-card">
+          <h2 class="section-title">Student Records</h2>
+          <div class="table-wrap">
+            <table class="records-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Email</th>
+                  <th>Course</th>
+                  <th class="actions-col">Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>John Doe</td>
+                  <td>20</td>
+                  <td>john.doe@example.com</td>
+                  <td>Computer Science</td>
+                  <td class="actions">
+                    <button class="btn btn-edit">Edit</button>
+                    <button class="btn btn-delete">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
