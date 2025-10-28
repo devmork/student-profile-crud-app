@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Profile</title>
     <link rel="stylesheet" href="index.css" />
+    <script defer src="index.js"></script>
   </head>
   <body>
     <main class="page">
@@ -20,7 +21,7 @@
         <section class="card form-card">
           <h2 class="section-title">Add New Student</h2>
           <form
-            class="student-form"
+            id="student-form"
             action="#"
             method="post"
             onsubmit="return false;">
@@ -61,7 +62,7 @@
             </div>
 
             <div class="form-actions">
-              <button class="btn btn-primary">Add Student</button>
+              <button class="btn btn-primary" type="submit">Add Student</button>
             </div>
           </form>
         </section>
